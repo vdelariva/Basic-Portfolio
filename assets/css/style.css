@@ -47,20 +47,25 @@ img {
     padding: 0 20px 20px 0;
 }
 
-input[type=text] {
+input, textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    resize: vertical;
     /* display: inline-block; */
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-input[type=submit] {
+
+button {
     padding:5px 20px; 
     background: #4aaaa5;
     color: #fff;
     font-size: medium;
+}
+
+textarea {
+    height: 200px;
+    resize: vertical;
 }
 
 .container {
@@ -69,7 +74,6 @@ input[type=submit] {
     padding: 20px;
     background-color: #fff;
     border: solid #ddd 1px;
-    
 }
 
 .img-container {
@@ -89,8 +93,7 @@ input[type=submit] {
 
 .main-body {
     background-image: url(../images/grey.png);
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
 footer {
@@ -99,6 +102,7 @@ footer {
     padding: 10px;
     border-top: solid #4aaaa5 5px;
 }
+
 .clearfix::after{
     /* overflow: auto; */
     content: "";
