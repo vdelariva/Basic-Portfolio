@@ -13,10 +13,7 @@ header {
     width: 960px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     margin: 0 auto;
-    /* border: purple solid 2px; */
-    border-bottom: solid #ccc 1px;
 }
 
 /* Change heading font */
@@ -25,12 +22,10 @@ h1, h2 {
 }
 
 h1 {
-    display: inline;
     margin: 0;
     background-color: #4aaaa5;
     color: #fff;
     padding: 20px;
-    /* border: solid red 2px; */
 }
 
 h2 {
@@ -40,17 +35,14 @@ h2 {
 }
 
 nav {
-    display: inline;
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
 }
 
 a {
     color: #777;
-}
-
-img {
-    float: left;
-    padding: 0 20px 20px 0;
 }
 
 input, textarea {
@@ -72,6 +64,38 @@ textarea {
     resize: vertical;
 }
 
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    bottom: 10%;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    background-color: #666;
+    text-align: center;
+    padding: 10px;
+    border-top: solid #4aaaa5 5px;
+}
+
+.main-body {
+    background-image: url(../images/grey.png);
+    border-top: solid #ccc 1px;
+    padding: 10px;
+}
+
+.img-float-left {
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
 .container {
     width: 960px;
     margin: 20px auto 50px;
@@ -80,33 +104,10 @@ textarea {
     border: solid #ddd 1px;
 }
 
-/* Still working on Portfolio page */
 .img-container {
-    /* float: left; */
-    /* position: relative; */
-    /* width: 50%; */
-    /* padding: 5px; */
-    border: green solid 1px;
-}
-
-/* used on Portfolio page */
-.text-block {
-    position: absolute;
-    background-color: #4aaaa5;
-    color: #fff;
-    bottom: 20px;
-}
-
-.main-body {
-    background-image: url(../images/grey.png);
-    padding: 20px; 
-}
-
-footer {
-    background-color: #666;
-    text-align: center;
-    padding: 10px;
-    border-top: solid #4aaaa5 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .clearfix::after{
