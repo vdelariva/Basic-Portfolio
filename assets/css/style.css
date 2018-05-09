@@ -8,6 +8,22 @@
     box-sizing: border-box;
 }
 
+/* Settings for sticky footer */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.body-container {
+    flex: 1 0 auto;
+}
+
 /* Set header properties */
 header {
     width: 960px;
@@ -91,6 +107,7 @@ figcaption {
 }
 
 footer {
+    flex-shrink: 0; /* For sticky footer */
     background-color: #666;
     text-align: center;
     padding: 10px;
