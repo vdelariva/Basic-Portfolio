@@ -45,6 +45,14 @@ a {
     color: #777;
 }
 
+a:hover {
+    color: #4aaaa5;
+}
+
+p {
+    line-height: 1.5;
+}
+
 input, textarea {
     width: 100%;
     padding: 12px 20px;
@@ -57,6 +65,10 @@ button {
     background: #4aaaa5;
     color: #fff;
     font-size: medium;
+}
+
+button:hover {
+    color: #393F44;
 }
 
 textarea {
@@ -95,6 +107,11 @@ footer {
     float: left;
     padding: 0 20px 20px 0;
 }
+
+.hover-outline:hover {
+    outline: 5px solid #4aaaa5;
+    outline-offset: 5px;
+  }
 
 .container {
     width: 960px;
